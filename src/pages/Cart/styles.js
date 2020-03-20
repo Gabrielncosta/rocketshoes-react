@@ -10,20 +10,20 @@ export const Container = styled.div`
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-  }
 
-  button {
-    background: #7159c1;
-    color: #fff;
-    border: 0;
-    border-radius: 4px;
-    padding: 12px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background 0.2;
+    button {
+      background: #7159c1;
+      color: #fff;
+      border: 0;
+      border-radius: 4px;
+      padding: 12px 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background 0.2;
 
-    &:hover {
-      background: ${darken(0.03, '#7159c1')};
+      &:hover {
+        background: ${darken(0.03, '#7159c1')};
+      }
     }
   }
 `;
@@ -68,6 +68,15 @@ export const ProductTable = styled.table`
       color: #666;
       padding: 6px;
       width: 50px;
+    }
+
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type='number'] {
+      -moz-appearance: textfield;
     }
   }
 
